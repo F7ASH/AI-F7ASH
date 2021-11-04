@@ -5,11 +5,12 @@
  */
 
 type PrivateColorResolvable = import("discord.js").ColorResolvable;
+type PrivateClientOptions = import("discord.js").ClientOptions;
 
 // A valid Hibiki config
 interface HibikiConfig {
   hibiki: HibikiBaseOptions;
-  options: import("discord.js").ClientOptions;
+  options: PrivateClientOptions;
   database: HibikiDatabaseOptions;
   colours: HibikiColourOptions;
   webserver: HibikiWebserverOptions;

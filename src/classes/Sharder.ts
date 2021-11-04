@@ -6,7 +6,7 @@
 
 import type { PathLike } from "fs";
 import { logger } from "../utils/logger";
-import { ShardingManager } from "discord.js";
+import { ShardClientUtil, ShardingManager } from "discord.js";
 
 type Auto = number | "auto";
 
@@ -58,10 +58,6 @@ export class HibikiShardingManager {
         logger.error(`Shard #${shard.id} encountered an error: ${err}`);
       });
 
-      shard.on("message", (msg) => {
-        logger.info(`Shard #${shard.id} recieved a message: ${msg}`);
-      });
-
       shard.on("ready", () => {
         logger.info(`Shard #${shard.id} is ready`);
       });
@@ -75,4 +71,24 @@ export class HibikiShardingManager {
       });
     });
   }
+}
+
+/**
+ * Returns the amount of total cached guilds on every shard
+ * @param shard The shardClientUtil to use
+ * @returns A number of cached guilds
+ */
+
+export async function fetchTotalCachedGuilds(shard: ShardClientUtil | null) {
+  return (await shard?.fetchClientValues("guilds.cache.size"))?.reduce((a, b) => (a as number) + (b as number)) as number;
+}
+
+/**
+ * Returns the amount of total cached users on every shard
+ * @param shard The shardClientUtil to use
+ * @returns A number of cached users
+ */
+
+export async function fetchTotalCachedUsers(shard: ShardClientUtil | null) {
+  return (await shard?.fetchClientValues("users.cache.size"))?.reduce((a, b) => (a as number) + (b as number)) as number;
 }

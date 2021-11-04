@@ -11,7 +11,7 @@ import path from "path";
 
 const HIBIKI_DATABASE_FILE = path.join(__dirname, "../../hibiki.db.json");
 
-// A type that emulates a Hibiki JSON database structure.
+// A type that emulates a Hibiki JSON database structure
 type HibikiJSONDatabaseStructure = Record<keyof typeof TABLES, Record<string, any>>;
 
 export class JSONProvider extends HibikiProvider {
@@ -89,6 +89,10 @@ export class JSONProvider extends HibikiProvider {
       }
     });
   }
+
+  /**
+   * Updates a JSON database
+   */
 
   private async _updateJSON() {
     fs.writeFileSync(HIBIKI_DATABASE_FILE, JSON.stringify(this.db), { encoding: "utf-8" });

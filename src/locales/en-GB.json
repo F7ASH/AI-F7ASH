@@ -4,25 +4,34 @@
   "global": {
     "ACCOUNT_CREATED": "Account Created",
     "ACCOUNT_JOINED": "Account Joined",
-    "CREATED_ON": "Created On",
-    "ID": "ID",
-    "NICKNAME": "Nickname",
-    "HIGHEST_ROLE": "Highest Role",
-    "RAN_BY": "Ran by {tag}",
-    "ERROR": "❌ Error",
-    "MEMBERS": "Members",
     "CHANNELS": "Channels",
-    "ROLES": "Roles",
+    "CREATED_ON": "Created On",
     "EMOJIS": "Emojis",
-    "STICKERS": "Stickers",
-    "OWNER": "Owner"
+    "ERROR": "❌ Error",
+    "HIGHEST_ROLE": "Highest Role",
+    "ID": "ID",
+    "LINKS": "Links",
+    "MEMBERS": "Members",
+    "NICKNAME": "Nickname",
+    "OWNER": "Owner",
+    "RAN_BY": "Ran by {tag}",
+    "ROLES": "Roles",
+    "STICKERS": "Stickers"
   },
 
   "general": {
-    "COMMAND_PING_PONG": "🏓 Pong!",
+    "COMMAND_ABOUT_DESCRIPTION": "{username}, by [sysdotini](https://espi.me) and [contributors](https://github.com/sysdotini/hibiki). 💜",
+    "COMMAND_ABOUT_LINK_STRING": "[Donate]({donate}) • [GitHub]({github}) • [Invite]({invite}) • [Privacy]({privacy}) • [Translate]({translate})",
+    "COMMAND_ABOUT_MODULES": "Modules",
+    "COMMAND_ABOUT_MODULES_STRING": "Hibiki v{botVersion} \nDiscord.js v{djsVersion} \nNode.js {nodeVersion} \nTypeScript v{tsVersion}",
+    "COMMAND_ABOUT_STATISTICS": "Stats",
+    "COMMAND_ABOUT_STATISTICS_STRING": "{shards} total shards \n{users} cached users \n{guilds} cached guilds \n{commands} total commands",
+    "COMMAND_ABOUT_TITLE": "🤖 About",
+    "COMMAND_INVITE_DESCRIPTION": "You can invite me to your server by clicking [here](https://discord.com/oauth2/authorize?&client_id={id}&scope=bot%20applications.commands&permissions=1581116663).",
+    "COMMAND_INVITE_TITLE": "🔗 Invite",
     "COMMAND_PING_DESCRIPTION": "This message took {latency}ms to send.",
-
-    "COMMAND_USERINFO_FAILED": "Failed to get that user's information. Try again later.",
-    "COMMAND_SERVERINFO_FAILED": "Failed to get the server's information. Try again later."
+    "COMMAND_PING_PONG": "🏓 Pong!",
+    "COMMAND_SERVERINFO_FAILED": "Failed to get the server's information. Try again later.",
+    "COMMAND_USERINFO_FAILED": "Failed to get that user's information. Try again later."
   }
 }

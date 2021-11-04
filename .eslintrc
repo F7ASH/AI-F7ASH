@@ -1,6 +1,3 @@
 {
-  "extends": "@sysdotini/eslint-config",
-  "rules": {
-    "@typescript-eslint/member-ordering": "off"
-  }
+  "extends": "@sysdotini/eslint-config"
 }
