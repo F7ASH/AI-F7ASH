@@ -13,7 +13,7 @@
 
 Hibiki is a powerful, easy-to-use utility and moderation Discord bot written in [TypeScript][typescript].
 
-# Features
+## Features
 
 These are just the highlights of Hibiki - all features are **completely free** with **no paywalls** in place.
 
@@ -30,18 +30,19 @@ These are just the highlights of Hibiki - all features are **completely free** w
 - 🌐 Customize Hibiki to the fullest extent with our web dashboard
 - 🌍 Use Hibiki in many different languages - we're fully translatable!
 
-# Official Instance
+## Official Instance
 
 You may invite the official instance using [this][invite] link.
 
 **_NO support is given for self-hosted instances._**
 
-This information applies only applies for the **official instance** of Hibiki. This includes:
+The information below only applies to the **official instance** of Hibiki. This includes:
 
 - The Hibiki Discord application: **`Hibiki#1448`** / **`493904957523623936`**
 - The Hibiki website and dashboard: **`hibiki.app`**
 
 ## Terms of Service
+*****Updated 2021-11-04*****
 
 - Do not try to crash, break, or exploit our application
 - If you find a critical, breaking bug, you must report it to us
@@ -50,12 +51,13 @@ This information applies only applies for the **official instance** of Hibiki. T
 - Bot collection and bot listing servers or apps are **strictly not allowed** to use our application.
 
 ## Data Privacy
+*****Updated 2021-11-04*****
 
-The following types of user data will be stored in our database **on-demand** when some **features are ran** in order for some of our features to work correctly.
+The following types of data will be stored **on-demand** when some **features are ran** in order for some of our features to work correctly.
 
 - **User ID(s)**: A Discord ID unique to your account (**user configs, etc.**)
 - **Server ID(s)**: A Discord ID unique to your server (**server configs, etc.**)
-- **Message ID(s)**: A message ID cooresponding to a message (**reminders, etc.**)
+- **Message ID(s)**: A message ID corresponding to a message (**reminders, etc.**)
 - **Command Response(s)**: Text responses in slash-commands (**for mute reasons, etc**)
 
 When added or removed from your server, the following information will be logged to a **private** channel:
@@ -66,20 +68,26 @@ When added or removed from your server, the following information will be logged
 
 **_No personal or identifying information is stored._**
 
-To view any data that cooresponds with your Discord account, run the `/gdpr` command. If you are a server owner, you can run `/gdpr server` to get data cooresponding to your server sent to you.
+To view any data that corresponds with your Discord account, run the `/gdpr` command.
 
-**To request a data deletion, contact us using a method below.**
+- If you are a server owner, you can run `/gdpr [server]` to get data corresponding to your server sent to you.
 
-- To be filled by O.E.M
+To request a data deletion, use a link below. State why you're contacting, or include "Hibiki Data Deletion Request" in your subject line.
 
-# License
+- **Discord**: `espi#0001`
+- **Telegram**: [@sysdotini][espi-telegram]
+- **Email**: [espi@riseup.net][espi-email]
 
-Hibiki is licensed under the [MIT][license] license.
+## License
+[MIT][license]
 
 [typescript]: https://www.typescriptlang.org/ "TypeScript's website."
-
-<!-- Legalese mumbo jumbo -->
+[invite]: https://discord.com/oauth2/authorize?&client_id=864687346977210368&scope=bot%20applications.commands&permissions=1581116663 "Invite the official Hibiki instance."
 
 [discord_tos]: https://discord.com/terms "Discord's Terms of Service"
 [discord_cg]: https://discord.com/guidelines "Discord's Community Guidelines"
+[espi-telegram]: https://t.me/sysdotini "Contact Espi (sysdotini) on Telegram"
+[espi-email]: mailto:espi@riseup.net
 [license]: LICENSE "MIT License file"
+
+
