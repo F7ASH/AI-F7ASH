@@ -42,7 +42,8 @@ The information below only applies to the **official instance** of Hibiki. This 
 - The Hibiki website and dashboard: **`hibiki.app`**
 
 ## Terms of Service
-*****Updated 2021-11-04*****
+
+**\***Updated 2021-11-04**\***
 
 - Do not try to crash, break, or exploit our application
 - If you find a critical, breaking bug, you must report it to us
@@ -51,7 +52,8 @@ The information below only applies to the **official instance** of Hibiki. This 
 - Bot collection and bot listing servers or apps are **strictly not allowed** to use our application.
 
 ## Data Privacy
-*****Updated 2021-11-04*****
+
+**\***Updated 2021-11-04**\***
 
 The following types of data will be stored **on-demand** when some **features are ran** in order for some of our features to work correctly.
 
@@ -79,15 +81,13 @@ To request a data deletion, use a link below. State why you're contacting, or in
 - **Email**: [espi@riseup.net][espi-email]
 
 ## License
+
 [MIT][license]
 
 [typescript]: https://www.typescriptlang.org/ "TypeScript's website."
 [invite]: https://discord.com/oauth2/authorize?&client_id=864687346977210368&scope=bot%20applications.commands&permissions=1581116663 "Invite the official Hibiki instance."
-
 [discord_tos]: https://discord.com/terms "Discord's Terms of Service"
 [discord_cg]: https://discord.com/guidelines "Discord's Community Guidelines"
 [espi-telegram]: https://t.me/sysdotini "Contact Espi (sysdotini) on Telegram"
 [espi-email]: mailto:espi@riseup.net
 [license]: LICENSE "MIT License file"
-
-
