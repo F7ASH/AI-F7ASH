@@ -43,7 +43,7 @@ The information below only applies to the **official instance** of Hibiki. This 
 
 ## Terms of Service
 
-**\***Updated 2021-11-04**\***
+*****Updated 2021-11-04*****
 
 - Do not try to crash, break, or exploit our application
 - If you find a critical, breaking bug, you must report it to us
@@ -53,7 +53,7 @@ The information below only applies to the **official instance** of Hibiki. This 
 
 ## Data Privacy
 
-**\***Updated 2021-11-04**\***
+*****Updated 2021-11-04*****
 
 The following types of data will be stored **on-demand** when some **features are ran** in order for some of our features to work correctly.
 
