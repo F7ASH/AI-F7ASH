@@ -6,8 +6,8 @@ export class ServerinfoCommand extends HibikiCommand {
   description = "Returns information about the server.";
 
   public async run(interaction: CommandInteraction) {
+    // Gets the guild
     const guild = await interaction.guild?.fetch();
-    const fields: EmbedField[] = [];
 
     // Handler for if a server failed to fetch
     if (!guild) {
@@ -25,6 +25,8 @@ export class ServerinfoCommand extends HibikiCommand {
         ],
       });
     }
+
+    const fields: EmbedField[] = [];
 
     // ID
     fields.push({

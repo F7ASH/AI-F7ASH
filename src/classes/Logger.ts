@@ -6,4 +6,6 @@
 
 import { HibikiEvent } from "./Event";
 
-export abstract class HibikiLogger extends HibikiEvent {}
+export abstract class HibikiLogger extends HibikiEvent {
+  // TODO: Implement requiredIntents to not load loggers if we're missing an intent
+}

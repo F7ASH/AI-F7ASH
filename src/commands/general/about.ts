@@ -37,7 +37,7 @@ export class AboutCommand extends HibikiCommand {
       translate: "https://translate.hibiki.app",
     });
 
-    interaction.reply({
+    await interaction.reply({
       embeds: [
         {
           title: interaction.getLocaleString("general.COMMAND_ABOUT_TITLE"),

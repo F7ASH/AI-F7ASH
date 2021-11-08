@@ -13,10 +13,27 @@
     "LINKS": "Links",
     "MEMBERS": "Members",
     "NICKNAME": "Nickname",
+    "YES": "Yes",
+    "NO": "No",
     "OWNER": "Owner",
     "RAN_BY": "Ran by {tag}",
     "ROLES": "Roles",
-    "STICKERS": "Stickers"
+    "NSFW": "NSFW",
+    "TRUE": "True",
+    "TOPIC": "Topic",
+    "CATEGORY": "Category",
+    "FALSE": "False",
+    "STICKERS": "Stickers",
+    "TEXT": "Text",
+    "VOICE": "Voice",
+    "NEWS": "News",
+    "STAGE": "Stage",
+    "STORE": "Store",
+    "COLOUR": "Colour",
+    "POSITION": "Position",
+    "HOISTED": "Hoisted",
+    "MANAGED_BY_AN_INTEGRATION": "Managed by an Integration",
+    "CHANNEL_TYPE": "Channel Type"
   },
 
   "general": {
@@ -31,7 +48,12 @@
     "COMMAND_INVITE_TITLE": "🔗 Invite",
     "COMMAND_PING_DESCRIPTION": "This message took {latency}ms to send.",
     "COMMAND_PING_PONG": "🏓 Pong!",
-    "COMMAND_SERVERINFO_FAILED": "Failed to get the server's information. Try again later.",
-    "COMMAND_USERINFO_FAILED": "Failed to get that user's information. Try again later."
+    "COMMAND_SERVERINFO_FAILED": "Failed to get information about the server. Try again later.",
+    "COMMAND_USERINFO_FAILED": "Failed to get information about that user. Try again later.",
+    "COMMAND_ROLEINFO_FAILED": "Failed to get information about that role. Try again later.",
+
+    "COMMAND_CHANNELINFO_ACTIVETHREADS": "Active Threads",
+    "COMMAND_CHANNELINFO_ARCHIVEDTHREADS": "Archived Threads",
+    "COMMAND_CHANNELINFO_FAILED": "Failed to get information about that channel. Try again later."
   }
 }

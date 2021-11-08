@@ -5,7 +5,7 @@ export class PingCommand extends HibikiCommand {
   description = "Checks the current status of the bot.";
 
   public async run(interaction: CommandInteraction) {
-    interaction.reply({
+    await interaction.reply({
       embeds: [
         {
           title: interaction.getLocaleString("general.COMMAND_PING_PONG"),

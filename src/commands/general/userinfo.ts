@@ -4,7 +4,6 @@ import { createFullRelativeTimestamp } from "../../utils/timestamp";
 
 export class UserinfoCommand extends HibikiCommand {
   description = "Returns information about a member's account.";
-  type = 2;
   options: ApplicationCommandOptionData[] = [
     {
       type: 6,
@@ -15,10 +14,8 @@ export class UserinfoCommand extends HibikiCommand {
   ];
 
   public async run(interaction: CommandInteraction) {
-    // Gets the member & the guild member info
+    // Gets the raw member user info
     const member = await interaction.options.getUser(this.options[0].name)?.fetch();
-    const guildMember = await interaction.guild?.members.fetch(member?.id as DiscordSnowflake);
-    const fields: EmbedField[] = [];
 
     // Handler for if a member failed to fetch
     if (!member) {
@@ -28,14 +25,14 @@ export class UserinfoCommand extends HibikiCommand {
             title: interaction.getLocaleString("global.ERROR"),
             description: interaction.getLocaleString("general.COMMAND_USERINFO_FAILED"),
             color: this.bot.config.colours.error,
-            footer: {
-              text: interaction.getLocaleString("global.RAN_BY", { tag: interaction.user.tag }),
-              iconURL: interaction.user.displayAvatarURL({ dynamic: true }),
-            },
           },
         ],
       });
     }
+
+    // Gets the guild member info
+    const guildMember = await interaction.guild?.members.fetch(member.id);
+    const fields: EmbedField[] = [];
 
     // ID
     fields.push({

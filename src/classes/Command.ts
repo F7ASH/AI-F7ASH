@@ -6,13 +6,13 @@
 
 import type { HibikiClient } from "./Client";
 import type { ApplicationCommandOptionData, CommandInteraction } from "discord.js";
-import type { ApplicationCommandTypes } from "discord.js/typings/enums";
 import { Constants } from "discord.js";
 
 export const CommandOptionTypes = Constants.ApplicationCommandOptionTypes;
 
 export abstract class HibikiCommand {
-  type?: ApplicationCommandTypes;
+  // Valid slash command options
+  // TODO: Document this; use an Enum for "type" for ease-of-use
   options?: ApplicationCommandOptionData[];
 
   // Whether or not a command is voice-only
