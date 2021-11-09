@@ -1,7 +1,7 @@
 {
   "name": "@hibikiapp/bot",
   "version": "4.0.0-alpha",
-  "description": "The best Discord bot!",
+  "description": "A powerful and easy-to-use utility and moderation Discord bot written in TypeScript.",
   "author": "sysdotini <espi@riseup.net> (https://espi.me)",
   "contributors": [],
   "license": "MIT",

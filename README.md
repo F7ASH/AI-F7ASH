@@ -11,7 +11,7 @@
 [badge-workflow]: https://img.shields.io/github/workflow/status/sysdotini/hibiki/Push "Shields.io badge for workflow status."
 [badge-license]: https://img.shields.io/badge/license-MIT-orange.svg "Shields.io badge for the GNU AGPLv3."
 
-Hibiki is a powerful, easy-to-use utility and moderation Discord bot written in [TypeScript][typescript].
+Hibiki is a powerful and easy-to-use utility and moderation Discord bot written in [TypeScript][typescript].
 
 ## Features
 
