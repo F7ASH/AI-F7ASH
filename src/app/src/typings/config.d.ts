@@ -45,4 +45,7 @@ type HibikiColourOptions = {
 // Valid webserver config
 type HibikiWebserverOptions = {
   port?: number;
+  clientID?: DiscordSnowflake;
+  clientSecret?: string;
+  callbackURI?: string;
 };

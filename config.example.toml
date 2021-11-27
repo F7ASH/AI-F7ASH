@@ -15,6 +15,9 @@ schema = "hibiki"
 
 [options]
 
+[webserver]
+port = 6969
+
 [colours]
 primary = "0x648FFF"
 secondary = "0xDC267F"

@@ -1,12 +1,11 @@
 {
-  "name": "@hibikiapp/bot",
+  "private": true,
+  "name": "hibikiapp",
   "version": "4.0.0-alpha",
-  "description": "A powerful and easy-to-use utility and moderation Discord bot written in TypeScript.",
+  "description": "A powerful and easy-to-use moderation and utility Discord bot.",
   "author": "sysdotini <espi@riseup.net> (https://espi.me)",
-  "contributors": [],
   "license": "MIT",
   "homepage": "https://hibiki.app",
-  "main": "./dist/index.js",
   "bugs": {
     "url": "https://github.com/sysdotini/hibiki/issues"
   },
@@ -18,50 +17,17 @@
     "node": ">=16.6.0"
   },
   "scripts": {
-    "build": "tsc",
-    "build:config": "cross-env copyfiles 'config.toml' './dist/'",
-    "dev": "cross-env nodemon",
-    "format": "cross-env prettier --config .prettierrc './**/*.{md,js,json,ts,yml}' --write",
-    "lint": "eslint --fix .",
+    "app:start": "pnpm recursive run start --filter @hibikiapp/app",
+    "web:start": "pnpm recursive run start --filter @hibikiapp/web",
+    "app:dev": "pnpm recursive run dev --filter @hibikiapp/app",
+    "web:dev": "pnpm recursive run dev --filter @hibikiapp/web",
+    "build": "pnpm recursive run build",
     "prebuild": "cross-env rimraf ./dist/",
-    "postbuild": "npm run build:config",
-    "start": "npm run build && cross-env NODE_ENV=production node dist/index.js",
-    "test": "tsc && eslint ."
-  },
-  "dependencies": {
-    "@discordjs/rest": "^0.1.0-canary.0",
-    "@iarna/toml": "^2.2.5",
-    "dayjs": "^1.10.7",
-    "discord-api-types": "^0.24.0",
-    "discord.js": "^13.3.1",
-    "got": "^11.8.2",
-    "knex": "^0.95.13",
-    "pg": "^8.7.1",
-    "pino": "^7.1.0",
-    "pino-pretty": "^7.2.0"
+    "dev": "cross-env concurrently \"pnpm run app:dev\" \"npm run web:dev\""
   },
   "devDependencies": {
-    "@sysdotini/eslint-config": "^2.0.2",
-    "@types/node": "^16.11.6",
-    "@types/pino": "^6.3.12",
-    "@typescript-eslint/eslint-plugin": "^5.3.0",
-    "@typescript-eslint/parser": "^5.3.0",
-    "copyfiles": "^2.4.1",
+    "concurrently": "^6.4.0",
     "cross-env": "^7.0.3",
-    "eslint": "^8.2.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.25.2",
-    "eslint-plugin-prettier": "^4.0.0",
-    "nodemon": "^2.0.14",
-    "prettier": "^2.4.1",
-    "rimraf": "^3.0.2",
-    "ts-node": "^10.4.0",
-    "typescript": "^4.4.4"
-  },
-  "optionalDependencies": {
-    "bufferutil": "^4.0.5",
-    "erlpack": "github:discord/erlpack",
-    "utf-8-validate": "^5.0.7",
-    "zlib-sync": "^0.1.7"
+    "rimraf": "^3.0.2"
   }
 }

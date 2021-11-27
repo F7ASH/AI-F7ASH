@@ -7,7 +7,7 @@ export class ChannelinfoCommand extends HibikiCommand {
   description = "Returns information about a channel.";
   options: ApplicationCommandOptionData[] = [
     {
-      type: "BOOLEAN",
+      type: 7,
       name: "channel",
       description: "The channel to get information about.",
       required: true,

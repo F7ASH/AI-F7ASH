@@ -2,6 +2,7 @@
 config.json
 config.toml
 application.yml
+.hibiki-secret-key
 
 # Binaries
 *.jar
@@ -214,3 +215,6 @@ Temporary Items
 
 # Local History for Visual Studio Code
 .history/
+
+# Svelte
+.svelte-kit

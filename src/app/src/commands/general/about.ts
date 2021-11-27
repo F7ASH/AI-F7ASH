@@ -32,7 +32,7 @@ export class AboutCommand extends HibikiCommand {
     const linkString = interaction.getLocaleString("general.COMMAND_ABOUT_LINK_STRING", {
       donate: "https://ko-fi.com/sysdotini",
       invite: `https://discord.com/oauth2/authorize?&client_id=${this.bot.user?.id}&scope=bot%20applications.commands&permissions=1581116663`,
-      privacy: "https://hibiki.app/privacy/",
+      privacy: "https://github.com/sysdotini/hibiki/tree/main#privacy-policy",
       github: "https://github.com/sysdotini/hibiki",
       translate: "https://translate.hibiki.app",
     });
