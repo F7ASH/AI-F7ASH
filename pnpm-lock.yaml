@@ -15,7 +15,6 @@ importers:
   src/app:
     specifiers:
       '@discordjs/rest': ^0.1.0-canary.0
-      '@iarna/toml': ^2.2.5
       '@sysdotini/eslint-config': ^2.0.2
       '@types/node': ^16.11.10
       '@typescript-eslint/eslint-plugin': ^5.4.0
@@ -44,7 +43,6 @@ importers:
       zlib-sync: ^0.1.7
     dependencies:
       '@discordjs/rest': 0.1.0-canary.0
-      '@iarna/toml': 2.2.5
       dayjs: 1.10.7
       discord-api-types: 0.24.0
       discord.js: 13.3.1_5971b5a749a91823f5467a6d31a2f8b3
@@ -207,6 +205,7 @@ packages:
 
   /@iarna/toml/2.2.5:
     resolution: {integrity: sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==}
+    dev: true
 
   /@nodelib/fs.scandir/2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}

@@ -4,7 +4,7 @@
  * @typedef config
  */
 
-type PrivateColorResolvable = import("discord.js").ColorResolvable;
+type PrivateColorResolvable = import("discord.js").ColorResolvable & `0x${string}`;
 type PrivateClientOptions = import("discord.js").ClientOptions;
 
 // A valid Hibiki config
@@ -13,7 +13,6 @@ interface HibikiConfig {
   options: PrivateClientOptions;
   database: HibikiDatabaseOptions;
   colours: HibikiColourOptions;
-  webserver: HibikiWebserverOptions;
 }
 
 // Options for Hibiki itself
@@ -37,15 +36,8 @@ interface HibikiDatabaseOptions {
 // Valid hex colour config
 type HibikiColourOptions = {
   primary: PrivateColorResolvable;
+  secondary: PrivateColorResolvable;
   error: PrivateColorResolvable;
   success: PrivateColorResolvable;
   warning: PrivateColorResolvable;
-};
-
-// Valid webserver config
-type HibikiWebserverOptions = {
-  port?: number;
-  clientID?: DiscordSnowflake;
-  clientSecret?: string;
-  callbackURI?: string;
 };

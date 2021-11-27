@@ -23,7 +23,7 @@
     "web:dev": "pnpm recursive run dev --filter @hibikiapp/web",
     "build": "pnpm recursive run build",
     "prebuild": "cross-env rimraf ./dist/",
-    "dev": "cross-env concurrently \"pnpm run app:dev\" \"npm run web:dev\""
+    "dev": "pnpm run prebuild && cross-env concurrently \"npm run app:dev\" \"npm run web:dev\""
   },
   "devDependencies": {
     "concurrently": "^6.4.0",
